@@ -13,7 +13,23 @@ const HomeScreen = props => {
     const {getContextNotes} = userContext();
     const [notes,setNotes] = useState();
 
+    useEffect(() => {
 
+        const getData = () => {
+            getContextNotes()
+        };
+
+        getData()
+
+    },[])
+
+
+
+    return(
+        <View>
+            
+        </View>
+    );
 
 
 }
